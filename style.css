@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*for the font of my general text appearance*/
+    background-color: white;
+    line-height: 1.6; 
+    color: #333; 
+}
+
+
+header{
+    background-image: linear-gradient(135deg, teal, purple);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px; 
+    padding: 5px;
+    height: 78vh; 
+    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);*/
+}
+
+
+.container h1{
+    font-size: 4em; 
+    position: relative;
+    left: -500px;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 1.7em;
+    position: relative;
+    right: -600px;
+    top: -70px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    position: relative; 
+  }
+  
+  
+  nav a::after {
+    content: '';              
+    position: absolute;
+    width: 0%;                 
+    height: 5px;                
+    background: linear-gradient(135deg, teal, purple);  
+    bottom: 0;                  
+    left: 0;
+    transition: width 0.5s ease;
+  }
+  
+  /* Hover effect to display the underline */
+  nav a:hover::after {
+    width: 100%; 
+  }
+.image img{
+    width: 800px;
+    position: relative;
+    top: -129px;
+    left: -150px;
+}
+
+.image h2{
+    position: relative;
+    top: 90px;
+    left: -330px;
+    color: silver;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.text1{
+    color: silver;
+    position: relative;
+    top: -700px;
+    right: -330px;
+    font-size: 1.2em;
+}
+
+.text1 p{
+    text-align: left;
+    position: relative;
+    right:-310px;
+
+}
+
+.text1 h3{
+    position: relative;
+    left: -140px;
+}
+
+
+.project{
+    margin: 20px;
+}
+
+.project h3{
+    text-align: center;
+    font-size: 3em;
+    text-decoration: double;
+}
+
+
+.project1{
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px blue;
+    transition: transform 5s ease;
+    text-align: center;
+    margin: 50px;
+    background: linear-gradient(135deg, skyblue, white);
+}
+
+.project2{
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px purple;
+    transition: transform 5s ease;
+    text-align: center;
+    margin: 50px;
+    background: linear-gradient(135deg, silver, wheat )
+}
+
+.project3{
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #87CEEB;
+    transition: transform 5s ease;
+    text-align: center;
+    margin: 50px;
+    background: linear-gradient(135deg, #87CEEB, yellow);
+}
+
+
+
+.project2{
+    margin: 80px;
+}
+
+.only{
+    margin-bottom: 300px;
+    padding-bottom: 300px;
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, yellow, skyblue, purple);
+    border-radius: 80px;
+}
+
+p img{
+    width: 350px;
+}
+
+
+
+.web{
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    font-size: 1.5em;
+    position: relative;
+    top: -15px;
+    left: -80px;
+
+    
+}
+
+.web h3{
+    font-size: 1.3em;
+    position: relative;
+    top: 4px;
+    color: purple;
+}
+
+
+.about{
+    background: linear-gradient(135deg, skyblue, teal);
+    padding-top: 50px;
+    margin: 20px;
+    padding-bottom: 40px;
+    border-radius: 40px;
+}
+
+
+.dan{
+    margin-bottom: 100px;
+    color: black;
+    /*position: relative;
+    top: 30px;
+    right: -45px;*/
+    display: flex;
+    width: 100%;
+}
+
+.dave-image{
+    flex: 1;
+    padding: 20px;
+}
+
+
+.dave-text{
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    left: -50px;
+}
+
+.dan img{
+    width: 400px;
+    height: auto;
+    border: 5px solid purple;
+    border-radius: 60px;
+    position: relative;
+    right: -50px;
+
+
+}
+
+.name{
+    display: flex;
+    gap: 120px;
+}
+.a{
+    display: flex;
+    gap: 70px;
+}
+.b{
+    display: flex;
+    gap: 90px;
+}
+.c{
+    display: flex;
+    gap: 80px;
+}
+
+.d{
+    display: flex;
+    gap: 100px;
+}
+
+.e{
+    display: flex;
+    gap: 10px;
+}
+
+.f{
+    display: flex;
+    gap: 50px;
+}
+
+.margin{
+    margin-top: 100px;
+}
+b{
+    font-size: 1.3em;
+}
+
+p{
+    font-size: 1em;
+}
+
+
+.contact{
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px purple;
+    line-height: 50px;
+    border-radius: 10%;
+    background: linear-gradient(135deg, skyblue, yellow, purple);
+}
+
+
+.contact1{
+    display: flex;
+}
+
+.social1{
+    display: flex;
+}
+
+
+@media(max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*for the font of my general text appearance*/
+        background-color: white;
+        line-height: 1.6; 
+        color: #333; 
+    }
+    
+    
+    header{
+        background-image: linear-gradient(135deg, teal, purple);
+        overflow: hidden;
+        margin: 10px; 
+        padding: 5px;
+        height: 85vh; 
+        /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);*/
+    }
+    
+    
+    .container h1{
+        font-size: 3.5em; 
+        position: relative;
+        left: 20px;
+        color: white;
+    }
+    
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 0px;
+        font-size: 1.1em;
+        position: relative;
+        right: -120px;
+        top: -10px;
+        
+    }
+    
+    nav a {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: white;
+        position: relative; 
+      }
+      
+      
+      nav a::after {
+        content: '';              
+        position: absolute;
+        width: 0%;                 
+        height: 5px;              
+        background: linear-gradient(135deg, teal, purple);  
+        border-radius: 100px;
+        bottom: 0;                  
+        left: 0;
+        transition: width 0.5s ease;
+      }
+      
+      /* Hover effect to display the underline */
+      nav a:hover::after {
+        width: 100%; 
+    
+      }
+    
+    .image img{
+        width: 500px;
+        position: relative;
+        top: -100px;
+        left: -200px;
+    }
+    
+    .image h2{
+        position: relative;
+        top: 90px;
+        left: 60px;
+        color: silver;
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    
+    .text1{
+        color: silver;
+        position: relative;
+        top: -250px;
+        left: -310px;
+        font-size: 1em;
+        overflow: visible;
+    }
+    
+    .text1 p{
+        text-align: left;
+        position: relative;
+        right:-310px;
+    
+    }
+    
+    .text1 h3{
+        position: relative;
+        left:250px;
+        text-align: center;
+    }
+    
+    
+    
+    
+    p img{
+        width: 350px;
+    }
+    
+    
+    
+    .web{
+        justify-content: center;
+        font-size: 0.992em;
+        position: relative;
+        top: -15px;
+        left: -10px;   
+    }
+
+    .web h2{
+        margin: -100px;
+        position: relative;
+        top: 50px;
+        right: -130px;
+    }
+    
+    .about{
+        background: linear-gradient(135deg, skyblue, teal);
+        padding-top: 50px;
+        margin: 20px;
+        padding-bottom: 40px;
+        border-radius: 40px;
+    }
+    
+    
+    .dan{
+        margin-bottom: 100px;
+        color: black;
+        font-size: 1em;
+        height: 150vh;
+        /*position: relative;
+        top: 30px;
+        right: -45px;*/
+        display: flex;
+        width: 100%;
+    }
+    
+    .dave-image{
+        padding: 20px;
+    }
+
+    .p p{
+        position: relative;
+        right: -130px;
+        top: 170px;
+        margin: -180px;
+    }
+
+    .alphabet{
+        position: relative;
+        top: 400px;
+        left: 200px;
+        margin: -200px;
+
+    }
+
+    .alphabet b{
+        position: relative;
+        left: -40px;
+    }
+  
+    .dave-text{
+        padding: 20px;
+        position: relative;
+        left: -300px;
+        top: 600px;
+        width: 100%;
+    }
+    
+    .dan img{
+        width: 300px;
+        height: auto;
+        border: 5px solid purple;
+        border-radius: 60px;
+        position: relative;
+        right: -50px;
+    
+    
+    }
+    
+    .name{
+        display: flex;
+        gap: 120px;
+    }
+
+    .a{
+        display: flex;
+        gap: 65px;
+    }
+
+
+    .b{
+        display: flex;
+        gap: 90px;
+    }
+ 
+
+    .c{
+        display: flex;
+        gap: 70px;
+    }
+
+
+    
+    .d{
+        display: flex;
+        gap: 100px;
+    }
+    
+    .e{
+        display: flex;
+    }
+
+    .e p{
+        position: relative;
+        left: -30px;
+    }
+    
+    .f{
+        display: flex;
+        gap: 30px;
+    }
+  
+    
+
+    .margin{
+        margin-top: 100px;
+    }
+    b{
+        font-size: 1.3em;
+    }
+    
+    p{
+        font-size: 1em;
+    }
+
+    .project{
+        margin: 10px;
+    }
+    
+    .project h3{
+        text-align: center;
+        font-size: 3em;
+        text-decoration: double;
+    }
+    
+    
+    .project1{
+        background-color: white;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px blue;
+        transition: transform 5s ease;
+        text-align: center;
+        margin: 50px;
+        background: linear-gradient(135deg, skyblue, white);
+    }
+    
+    .project2{
+        background-color: white;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px purple;
+        transition: transform 5s ease;
+        text-align: center;
+        margin: 50px;
+        background: linear-gradient(135deg, silver, wheat );
+        padding-bottom: 30px;
+    }
+    
+    .project3{
+        background-color: white;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px #87CEEB;
+        transition: transform 5s ease;
+        text-align: center;
+        margin: 50px;
+        background: linear-gradient(135deg, #87CEEB, yellow);
+    }
+    
+    
+    
+   
+    
+    .only{
+        display: block;
+        padding-bottom: 30px;
+        padding: 20px;
+        border-radius: 80px;
+        width: 110%;
+        margin-right: 30px;
+        background-color: white;
+    }
+    
+    
+    .contact{
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px purple;
+        line-height: 50px;
+        border-radius: 10%;
+        background: linear-gradient(135deg, skyblue, yellow, purple);
+    }
+    
+    
+    .contact1{
+        display: flex;
+    }
+    
+    .social1{
+        display: flex;
+    }
+    
+    
+
+
+}
+
